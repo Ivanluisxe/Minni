@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9b58ade1-29ad-4215-a755-754f83d1e3cf": {
+      "ProjectGuid": "9b58ade1-29ad-4215-a755-754f83d1e3cf",
+      "DisplayName": "Minni",
+      "ColorIndex": 0
+    },
+    "04cd6851-b923-4ab3-91e7-a1d8477afe0e": {
+      "ProjectGuid": "04cd6851-b923-4ab3-91e7-a1d8477afe0e",
+      "DisplayName": "Krypton Explorer",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "81d7abb6-d2e3-45bf-a81f-651d53d84449": {
+      "ProjectGuid": "81d7abb6-d2e3-45bf-a81f-651d53d84449",
+      "DisplayName": "BibliotecaMinni",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

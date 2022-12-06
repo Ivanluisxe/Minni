@@ -1,0 +1,6 @@
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\bin\Debug\BibliotecaMinni.dll
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\bin\Debug\BibliotecaMinni.pdb
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\obj\Debug\BibliotecaMinni.csproj.AssemblyReference.cache
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\obj\Debug\BibliotecaMinni.csproj.CoreCompileInputs.cache
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\obj\Debug\BibliotecaMinni.dll
+C:\Users\ivan.lojunior\source\repos\Minni\BibliotecaMinni\obj\Debug\BibliotecaMinni.pdb

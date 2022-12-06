@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minni", "Minni\Minni.csproj", "{9B58ADE1-29AD-4215-A755-754F83D1E3CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Explorer", "..\..\..\Downloads\Krypton-master\Source\Krypton Explorer\Krypton Explorer.csproj", "{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaMinni", "BibliotecaMinni\BibliotecaMinni.csproj", "{81D7ABB6-D2E3-45BF-A81F-651D53D84449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseCS|Any CPU = ReleaseCS|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.ReleaseCS|Any CPU.ActiveCfg = Release|Any CPU
+		{9B58ADE1-29AD-4215-A755-754F83D1E3CF}.ReleaseCS|Any CPU.Build.0 = Release|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.ReleaseCS|Any CPU.ActiveCfg = ReleaseCS|Any CPU
+		{04CD6851-B923-4AB3-91E7-A1D8477AFE0E}.ReleaseCS|Any CPU.Build.0 = ReleaseCS|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.ReleaseCS|Any CPU.ActiveCfg = Release|Any CPU
+		{81D7ABB6-D2E3-45BF-A81F-651D53D84449}.ReleaseCS|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99431ECE-EA0D-42B4-9F65-AC6F4DB7E135}
+	EndGlobalSection
+EndGlobal
