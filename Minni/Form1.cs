@@ -74,5 +74,15 @@ namespace Minni
         {
 
         }
+
+        private void lblLinkCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Views.MenuCadastroUser menuCadastroUser = new Views.MenuCadastroUser();
+            Hide();
+
+            menuCadastroUser.ShowDialog();
+
+            Show();
+        }
     }
 }

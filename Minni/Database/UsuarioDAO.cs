@@ -124,12 +124,12 @@ namespace Minni.Database
                 return -1;
             }
         }
-
+        // Trabalhar com os eventos voltados ao usuário: 
         public static DataTable ListarEventos(int id)
         {
 
 
-            string comando = "SELECT nome_evento AS 'Evento', Importancia  FROM eventos_abertos WHERE privado = 0 OR id_resp_registro = @id ORDER BY id_importancia  ";
+            string comando = "SELECT id, nome_evento AS 'Evento', Importancia  FROM eventos_abertos WHERE situacao = 1 AND (id_resp_registro = @id OR privado = 0)  ORDER BY id_importancia  ";
 
 
 
@@ -151,7 +151,30 @@ namespace Minni.Database
 
             return tabela;
         }
+        public static DataTable ListarTudoEvento(int id)
+        {
+            string comando = "SELECT * FROM eventos_abertos  WHERE id = @id AND situacao = 1 ";
 
+
+            ConexaoBD conexaoBD = new ConexaoBD();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+
+
+            cmd.Prepare();
+            cmd.Parameters.AddWithValue("@id", id);
+
+            //Declarar tabela que irá receber o resultado: 
+
+            DataTable tabela = new DataTable();
+            //preencher a tabela com o resultado da consulta 
+            tabela.Load(cmd.ExecuteReader());
+
+            conexaoBD.Desconectar(con);
+
+            return tabela;
+
+        }
         public static bool Editar(Usuario u)
         {
 
@@ -200,6 +223,42 @@ namespace Minni.Database
             }
         }
 
+        public static bool ConcluirEventos(int id)
+        {
+            string comando = "UPDATE eventos SET situacao = 0 WHERE id = @id";
+            
 
+            ConexaoBD conexaoBD = new ConexaoBD();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+
+            cmd.Parameters.AddWithValue("@id", id);
+            
+            cmd.Prepare();
+
+            try
+            {
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    conexaoBD.Desconectar(con);
+                    return false;
+                }
+                else
+                {
+                    conexaoBD.Desconectar(con);
+                    return true;
+                }
+            }
+            catch
+            {
+                conexaoBD.Desconectar(con);
+                return false;
+            }
+        }
+
+        
     }
+
+
+    
 }

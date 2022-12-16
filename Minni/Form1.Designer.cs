@@ -36,7 +36,7 @@
             this.lblUsername = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblSenha = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btnEntrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.lblCadastro = new System.Windows.Forms.Label();
+            this.lblLinkCadastro = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -120,15 +120,17 @@
             this.btnEntrar.Values.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // lblCadastro
+            // lblLinkCadastro
             // 
-            this.lblCadastro.AutoSize = true;
-            this.lblCadastro.Location = new System.Drawing.Point(416, 224);
-            this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(154, 13);
-            this.lblCadastro.TabIndex = 5;
-            this.lblCadastro.Text = "Não tem acesso? Crie um aqui.";
-            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
+            this.lblLinkCadastro.AutoSize = true;
+            this.lblLinkCadastro.LinkColor = System.Drawing.Color.Black;
+            this.lblLinkCadastro.Location = new System.Drawing.Point(411, 228);
+            this.lblLinkCadastro.Name = "lblLinkCadastro";
+            this.lblLinkCadastro.Size = new System.Drawing.Size(154, 13);
+            this.lblLinkCadastro.TabIndex = 6;
+            this.lblLinkCadastro.TabStop = true;
+            this.lblLinkCadastro.Text = "Não tem acesso? Crie um aqui.";
+            this.lblLinkCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkCadastro_LinkClicked);
             // 
             // login
             // 
@@ -136,7 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(577, 246);
-            this.Controls.Add(this.lblCadastro);
+            this.Controls.Add(this.lblLinkCadastro);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsername);
@@ -151,6 +153,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateInactive.Border.Color1 = System.Drawing.Color.White;
             this.StateInactive.Border.Color2 = System.Drawing.Color.White;
+            this.StateInactive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateInactive.Border.Rounding = 16;
             this.StateInactive.Border.Width = -5;
             this.StateInactive.Header.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -173,7 +178,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblUsername;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblSenha;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnEntrar;
-        private System.Windows.Forms.Label lblCadastro;
+        private System.Windows.Forms.LinkLabel lblLinkCadastro;
     }
 }
 

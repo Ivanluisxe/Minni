@@ -38,3 +38,4 @@ C:\Users\ivan.lojunior\source\repos\Minni\Minni\bin\Debug\System.Runtime.Compile
 C:\Users\ivan.lojunior\source\repos\Minni\Minni\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ivan.lojunior\source\repos\Minni\Minni\obj\Debug\Minni.Views.MenuPrincipal.resources
 C:\Users\ivan.lojunior\source\repos\Minni\Minni\obj\Debug\Minni.login.resources
+C:\Users\ivan.lojunior\source\repos\Minni\Minni\obj\Debug\Minni.Views.MenuCadastroUser.resources
